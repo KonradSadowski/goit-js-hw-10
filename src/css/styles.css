@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -16,5 +18,37 @@ body {
   font: inherit;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  margin: 15px;
+}
+
+.flag {
+  height: 25px;
+  width: 50px;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+.country-list {
+  list-style: none;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 5px;
+  vertical-align: middle;
+}
+
+.country-list li {
+  background-color: rgb(189, 185, 185);
+  line-height: 1.75;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  text-decoration: underline;
 }
